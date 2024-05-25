@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estático, relativo, absoluto e fixo</title>
+    <style type="text/css">
+      h1 {
+        position: static;
+      }
+
+      p {
+        width: 400px;
+      }
+
+      #container {
+        background-color: white;
+        width: 800px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 10px solid black;
+      }
+
+      .relative {
+        border: 3px solid red;
+        position: relative;
+        top: 20px;
+        left: 50px;
+      }
+
+      .absolute {
+        border: 3px solid rgb(21, 0, 255);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      .fixed {
+        border: 3px solid rgb(0, 255, 60);
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Posicionamentos</h1>
+
+      <p class="relative">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate?
+      </p>
+
+      <p class="absolute">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate?
+      </p>
+
+      <p class="fixed">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate?
+      </p>
+    </div>
+  </body>
+</html>
