@@ -1,0 +1,26 @@
+#box {
+    justify-content: top-down;
+    width: 400px;
+    background: url(../transferir.jpeg) no-repeat;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+
+}
+
+#box h1 {
+    height: 100px;
+    background: rgba(84, 234, 24, 0.652);
+}
+
+#box p {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    align-items: center;
+    text-transform: uppercase;
+    width: 1000px;
+    height: 100px;
+    background: radial-gradient( rgba(255, 0, 0, 0.6) 20%, rgba(221, 255, 0, 0.6),green 75%);
+}

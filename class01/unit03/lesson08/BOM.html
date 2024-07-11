@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Object Model</title>
+    <script>
+        // var janela;
+        // function PopUp() {
+        //     janela = window.open('','nova janela','width=200,height=200');
+        //     janela.document.write(`
+        //         <html>
+        //         <head>
+        //             <title>Nova Janela</title>
+        //         </head>
+        //         <body>
+        //             <p>Conteúdo da nova janela</p>
+        //         </body>
+        //         </html>
+        //     `);
+        //     janela.document.close();
+        // }
+
+        // function closePopUp() {
+        //     janela.close();
+        // }
+
+        // function printPage() {
+        //     janela.print();
+        // }
+        // let heigth = window.screen.availHeight
+        // let width = window.screen.availWidth
+
+        // document.write('Altura do navegador: ' + heigth + '<br>')
+        // document.write('Largura do navegador:'+ width + '<br>')
+
+        window.setTimeout(function () {
+            document.write('<span style="color: blue; font-weight: bold;">Grêmio</span> </br>');
+        }, 12000);
+
+        let i = 10;
+
+        let x = window.setInterval(function () {
+            document.write(i + '<br>')
+            i--;
+            if (i == 0) {
+                window.clearInterval(x)
+                document.close();
+            }
+        }, 1000)
+
+    </script>
+</head>
+
+<body>
+    <!-- <button onclick="PopUp()">Abrir uma janela</button>
+    <button onclick="closePopUp()">Fechar uma janela</button>
+    <button onclick="printPage()">Imprimir a página</button> -->
+
+    <!-- <button onclick="window.location.href='https://www.google.com.br'">Ir para o Google</button> -->
+
+    <p>Melhor time</p>
+
+</body>
+</html>

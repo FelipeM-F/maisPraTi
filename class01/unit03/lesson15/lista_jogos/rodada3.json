@@ -1,0 +1,6 @@
+{
+    "jogos": [
+        {"time1": "Time I", "time2": "Time J"},
+        {"time1": "Time K", "time2": "Time L"}
+    ]
+}

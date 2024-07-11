@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript manilpulando css</title>
+    <link rel="stylesheet" href="DOM.css">
+    <style>
+        .estilo{
+            color: rgb(0, 255, 128);
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function trocarEstiloLetra(cor) {
+            document.querySelector('p').style.color = cor
+        }
+        function trocarEstiloClasse(propriedade, valor) {
+            document.querySelector('.manipulavel').style[propriedade] = valor;
+        }
+        function trocarEstiloDoElemento(estiloOriginal,nomeEstilo) {
+            document.querySelector(estiloOriginal).className = nomeEstilo
+        }
+    </script>
+</head>
+<body>
+    <div> Trocar com css direto pelo HTML
+        <button type="button" onclick="trocarEstiloLetra('navy')">Azul</button>
+        <button type="button" onclick="trocarEstiloLetra('#000')">Preto</button>
+        <button type="button" onclick="trocarEstiloLetra('#FFFF00')">Amarelo</button>
+        <button type="button" onclick="trocarEstiloLetra('#FFA500')">Laranja</button>
+        <button type="button" onclick="trocarEstiloLetra('#800080')">Roxo</button>
+    </div>
+
+    <div> Trocar com css em arquivo separad
+        <button type="button" onclick="trocarEstiloClasse('background-color','navy')">Azul</button>
+        <button type="button" onclick="trocarEstiloClasse('background-color','#000')">Preto</button>
+        <button type="button" onclick="trocarEstiloClasse('font-size','15px')">Fonte menor</button>
+        <button type="button" onclick="trocarEstiloClasse('font-size','45px')">Fonte maior</button>
+        <button type="button" onclick="trocarEstiloClasse('text-align','center')">Centralizar</button>
+        <button type="button" onclick="trocarEstiloClasse('text-align','left')">Texto a esquerda</button>        
+    </div>
+    <div> Trocar o estilo do elemento
+        <button type="button" onclick="trocarEstiloDoElemento('.manipulavel','estilo')">Trocar para o estilo '.estilo'</button> 
+        <button type="button" onclick="trocarEstiloDoElemento('.estilo','manipulavel')">Voltar para o original</button>      
+    </div>
+    
+    <p class ="manipulavel">Texto</p>
+
+</body>
+</html>
+

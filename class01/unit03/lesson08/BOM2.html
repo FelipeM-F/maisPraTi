@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Object Model</title>
+    <style>
+        #printFrame {
+            width: 800px;
+            height: 600px;
+            border: none;
+        }
+    </style>
+    <script>
+        function loadIframe() {
+            var iframe = document.getElementById('printFrame');
+            iframe.src = 'https://www.google.com';
+        }
+
+        function printIframe() {
+            var iframe = document.getElementById('printFrame');
+            iframe.contentWindow.print();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadIframe()">Carregar Google em iframe</button>
+    <button onclick="printIframe()">Imprimir iframe</button>
+    <iframe id="printFrame"></iframe>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tratamento de Erros</title>
+    <script>
+        let video = [];
+
+        video[1] = Array();
+        video[1]['Nome'] = 'Fullmetal Alchimist';-+9
+        video[1]['Categoria'] = 'Anime';
+
+        console.log(video);
+        function getVideo() {
+            try {
+                console.log(video[0]['Nome']);
+
+            } catch (error) {
+                tratarErro(error);
+                console.log("Erro :((")
+
+            } finally {
+                console.log('Sempre executado');
+            }
+        }
+
+        function tratarErro(error) {
+            console.log(error);
+        }
+
+        getVideo(video);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

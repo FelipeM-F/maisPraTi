@@ -1,0 +1,16 @@
+* {
+   color: blue;
+}
+
+p {
+    border: 2px solid;
+}
+
+h1 {
+    color: red;
+}
+
+
+#textoPrincipal {
+    color: green;
+}

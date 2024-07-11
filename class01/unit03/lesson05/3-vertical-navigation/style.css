@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+}
+nav {
+    background-color: #333;
+    width: auto;;
+    height: 100vh;
+    position: fixed;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #575757;
+}
+main {
+    margin-left: 200px; /* Espaço para a barra de navegação fixa */
+    padding: 20px;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+}
+.content main {
+    flex: 1;
+}
